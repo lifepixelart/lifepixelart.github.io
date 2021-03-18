@@ -1,19 +1,10 @@
 {
     "applinks": {
+        "apps": [],
         "details": [
              {
-               "appIDs": [ "W57U392DB7.com.lifepixelart.calendar-app"],
-               "components": [
-                 {
-                    "#": "no_universal_links",
-                    "exclude": true,
-                    "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
-                 },
-                 {
-                    "/": "/zoom/*",
-                    "comment": "Matches any URL whose path starts with /zoom/"
-                 }
-               ]
+                "appID": "W57U392DB7.com.lifepixelart.calendar-app",
+                "paths": [ "/zoom/redirect/"]
              }
          ]
      }
