@@ -79,7 +79,6 @@ sass:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - .well-known/
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
@@ -90,3 +89,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+include:
+  - .well-known
