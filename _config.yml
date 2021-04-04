@@ -18,21 +18,57 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: LifePixelArt
+email: apps@lifepixelart.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/index" # the subpath of your site, e.g. /blog
+url: "lifepixelart.com" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: lifepixelart
+github_username:  lifepixelart
 
 # Build settings
-theme: minima
+remote_theme: zerostaticthemes/jekyll-serif-theme
 plugins:
   - jekyll-feed
+  - jekyll-environment-variables
+
+# google_analytics_id: ""
+
+# homepage:
+#   show_call_box: true
+
+# logo:
+#   mobile: "images/logo/logo-mobile.svg"
+#   desktop: "images/logo/logo.svg"
+#   desktop_height: "36px"
+
+# footer:
+#   copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
+
+# seo:
+#   meta_og_title: "Jekyll Serif Theme"
+#   meta_og_type: "website"
+#   meta_og_url: "https://jekyll-serif.netlify.app"
+#   meta_og_image: "https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png"
+#   meta_og_description: "Jekyll Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
+#   meta_twitter_card: "summary"
+#   meta_twitter_site: "@zerostaticio"
+#   meta_twitter_creator: "@zerostaticio"
+
+collections:
+  services:
+    output: true
+  team:
+    output: true
+
+sass:
+  indentWidth: 4
+  style: compact # possible values: nested expanded compact compressed
+  precision: 10
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,14 +78,15 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .well-known/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
